@@ -22,3 +22,22 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+cat > .gitignore << 'EOF'
+# OS
+.DS_Store
+
+# Node
+node_modules/
+**/node_modules/
+
+# Build
+dist/
+**/dist/
+
+# Vite cache
+**/.vite/
+
+# Env
+.env
+.env.*
+EOF
